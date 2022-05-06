@@ -3,6 +3,6 @@
 
 int main(){
   double a = 10e-2;
-  int a = 07;
+  int b = 07;
   return 0;
 }
