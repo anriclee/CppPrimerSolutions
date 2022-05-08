@@ -33,9 +33,29 @@ refer to 2-22.cpp
 在 C++ 中允许 void 指针转换为另外一种类型的指针，但是非 void 类型不能转换
 
 # 2.25 
-a) ip : int pointer, value: undefined
+a) ip : int pointer, value: null
 i undefined 
 r undefined 
 b) i undefined & integer; ip is a pointer to integer, value undefined; 
 c) ip is a pointer to integer, value undefined; ip2 is integer type
+
+
+# 2.26 
+a) 非法操作，常量必须初始化
+b) 合法
+c) 合法
+d) 合法；非法 
+
+# 2.27
+a) int &r = 0; 不合法 不能把 r 绑定到一个临时变量中
+b) 如果 i2 是一个整型变量，则为合法
+c) 合法
+d) 合法
+e) 合法
+f) 不合法
+g) 合法
+
+# 2.28 
+
+
 
