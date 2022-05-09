@@ -57,5 +57,46 @@ g) 合法
 
 # 2.28 
 
+a) 不合法，cp 是一个固定的指针，需要初始化
+b) p2 不合法，理由同上
+c) ic 需要初始化
+d) p3 需要初始化
+e) p 需要初始化
+
+# 2.29
+
+a) legal
+b) illegal; // p3 为一个 const 指针， 
+c) illegal 
+d) illegal 
+e) legal 
+f) legal 
+
+# 2.30 
+
+
+top level: point itself is a const;
+
+low level: object point to is a const;
+
+const int v2 = 0; // top level 
+
+int v1 = v2; // no 
+
+int *p1 = &v1, &r1 = v1; // p1 no level , r1 top level 
+
+const int *p2 = &v2; // low level 
+
+const int *const p3 = &vi; // top level & low level 
+
+const  int &r2 = v2; // low level 
+
+
+
+# 2.31 
+
+
+
+
 
 
