@@ -95,8 +95,25 @@ const  int &r2 = v2; // low level
 
 # 2.31 
 
+const int v2 = 0; // v2 top-level
 
+int v1 = v2; // v1 no level
 
+int *p1 = &v1; // p1 no level 
+
+int &r1 = v1; // r1 no level 
+
+const int *p2 = &v2; // p2 low level
+
+const int *const p3 = &i; // p3 both top and low level 
+
+const int &r2 = v2; // r2 low level 
+
+r1 = v2; // legal, const is ignored
+p1 = p2; // illegal no same low level
+p2 = p1; // legal not const can be converted to const
+p1 = p3 //  illegal 
+p2 = p3; // legal same low level
 
 
 
