@@ -30,30 +30,24 @@ int main() {
   const int &w = 0;
 
   const int &z = i;
-
-  int v, *const vp;
-
-  int *p1, *const p5;
-
   const int ic = 9;
 
   int demo = 0;
 
   const int *const pd = &ic;
 
-  p1 = &ic;
-
   const int *const pdd = &ic;
-
-  p5 = p1;
 
   int v5 = 0;
 
   const int &rv5 = v5;
 
-  int &rv6 = v5;
 
   int &rv6 = demo;
+
+  int null = 0;
+
+  std::cout << null << std::endl;
 
   return 0;
 }

@@ -116,4 +116,38 @@ p1 = p3 //  illegal
 p2 = p3; // legal same low level
 
 
+# 2.32 
+
+int null = 0;//  null 
+
+int *p = null; // legal 
+
+# 2.33 
+
+int i = 0;
+int &r = i;
+
+auto a = r;
+
+const int ci = i;
+cont int &cr = ci;
+
+auto b = ci;
+auto c = cr;
+auto d = &i;
+auto e = &ci;
+auto &g = ci;
+
+
+a = 42; // a 为引用，此时会让 i = 42;
+b = 42; // b 的值为 42; 
+c = 42; // c 为一个整型，此时 c 的值为 42
+d = 42; // d 为指向一个 int 的指针，编译不通过
+e = 42; // e 为指向常量的指针，编译不通过
+g = 42; // g 为常量引用，不能更改引用值,编译不通过
+
+
+
+
+
 
